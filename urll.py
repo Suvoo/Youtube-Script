@@ -4,7 +4,7 @@ import string
 import random
 
 count = 5
-API_KEY = 'AIzaSyDdj9lRzF38phWaJSe5jCKeg-xTD_1mjnA'
+API_KEY = 'AIzaSyCFoKH_ADBMtodaauzucXSO876Hyt1WaIc'
 random = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(3))
 
 urlData = "https://www.googleapis.com/youtube/v3/search?key={}&maxResults={}&part=snippet&type=video&q={}".format(API_KEY,count,random)
