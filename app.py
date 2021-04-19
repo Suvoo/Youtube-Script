@@ -15,9 +15,10 @@ st.sidebar.text("Python and google dev API")
 st.sidebar.header("I hope you like to my product!")
 st.sidebar.header("Find me : @suvoo_o")
 
-count = st.number_input("Enter the number of videos to generate",min_value = 0,max_value=100,value = 20,step = 1)
+count = st.number_input("Enter the number of videos to generate",min_value = 0,max_value=100,value = 5,step = 1)
 
-API_KEY = 'AIzaSyDdj9lRzF38phWaJSe5jCKeg-xTD_1mjnA'
+API_KEY = 'AIzaSyCFoKH_ADBMtodaauzucXSO876Hyt1WaIc'
+
 random = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(3))
 
 urlData = "https://www.googleapis.com/youtube/v3/search?key={}&maxResults={}&part=snippet&type=video&q={}".format(API_KEY,count,random)
